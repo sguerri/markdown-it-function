@@ -16,9 +16,11 @@
         "browserify": "rollup -c rollup/rollup.config.js"
     },
     "files": [
+        "index.js",
         "src/",
         "dist/"
     ],
+    "main": "",
     "devDependencies": {
         "@rollup/plugin-commonjs": "^15.1.0",
         "@rollup/plugin-json": "^4.1.0",
