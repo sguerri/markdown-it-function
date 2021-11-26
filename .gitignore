@@ -2,4 +2,3 @@
 bump-version.sh
 node_modules/
 example/output.txt
-dist/
