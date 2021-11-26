@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.2.0/markdown-it.min.js" integrity="sha512-cTQeM/op796Fp1ZUxfech8gSMLT/HvrXMkRGdGZGQnbwuq/obG0UtcL04eByVa99qJik7WlnlQOr5/Fw5B36aw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="../dist/markdown-it-function.min.js"></script>
+    </head>
+    <body>
+        <b>INPUT</b>
+        <div id="input">
+@@author(sguerri)
+@@authorName({ "name": "sguerri" })
+
+# Hello
+
+@@container
+@@column
+@@class(hello)
+
+Hello World!
+
+@@endClass
+@@endColumn
+@@endContainer
+        </div>
+        <br />
+        <b>OUTPUT</b>
+        <div id="output"></div>
+        <script>
+            let input = document.getElementById('input').innerHTML;
+            let md = window.markdownit();
+            md.use(markdownitFunction, {
+                "container": "<div class='container'>",
+                "endContainer": "</div>",
+                "column": "<div class='column'>",
+                "endColumn": "</div>",
+                "class": "<div class='$1'>",
+                "endClass": "</div>",
+                "author": "<div class='author'>$1</div>",
+                "authorName": "<div class='author'>$name</div>"
+            });
+            let output = md.render(input);
+            document.getElementById('output').innerText = output;
+        </script>
+    </body>
+</html>
