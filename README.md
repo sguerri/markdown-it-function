@@ -6,7 +6,7 @@
 
 > Function plugin for markdown-it markdown parser  
 
-*Not for production*
+*Quick and Dirty. Not for production*
 
 ## Install
 

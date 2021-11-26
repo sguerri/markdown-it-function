@@ -85,7 +85,7 @@
         }
     };
 
-    var markdownItFunction = function(md, options)
+    var src = function(md, options)
     {
         options = options || {};
         md.block.ruler.before('fence', 'function', replace(), {
@@ -93,6 +93,8 @@
         });
         md.renderer.rules['function'] = render(options);
     };
+
+    var markdownItFunction = src;
 
     return markdownItFunction;
 
