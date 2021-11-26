@@ -25,7 +25,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm browserify
+        run: npm run browserify
       
       - name: Release
         uses: fnkr/github-action-ghr@v1
