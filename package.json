@@ -1,6 +1,6 @@
 {
     "name": "markdown-it-function",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "description": "Function plugin for markdown-it markdown parser",
     "keywords": [
         "markdown-it-plugin",
