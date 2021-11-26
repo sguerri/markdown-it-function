@@ -25,7 +25,7 @@ const plugins_minify = [
 
 export default [
     {
-        input: 'src/index.js',
+        input: 'index.js',
         output: [
             {
                 file: 'dist/markdown-it-function.js',

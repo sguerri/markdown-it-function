@@ -1,5 +1,5 @@
 const fs = require('fs');
-const mdFunction = require('../src/index');
+const mdFunction = require('../index');
 
 let md = require('markdown-it')();
 

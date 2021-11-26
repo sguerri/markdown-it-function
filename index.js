@@ -1,7 +1,7 @@
 'use strict';
 
-var function_render   = require('./render');
-var function_replace  = require('./replace');
+var function_render   = require('./src/render');
+var function_replace  = require('./src/replace');
 
 module.exports = function(md, options)
 {

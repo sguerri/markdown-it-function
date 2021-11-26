@@ -1,6 +1,6 @@
 {
     "name": "markdown-it-function",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "Function plugin for markdown-it markdown parser",
     "keywords": [
         "markdown-it-plugin",
@@ -16,9 +16,11 @@
         "browserify": "rollup -c rollup/rollup.config.js"
     },
     "files": [
+        "index.js",
         "src/",
         "dist/"
     ],
+    "main": "",
     "devDependencies": {
         "@rollup/plugin-commonjs": "^15.1.0",
         "@rollup/plugin-json": "^4.1.0",
