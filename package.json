@@ -1,0 +1,31 @@
+{
+    "name": "markdown-it-function",
+    "version": "0.0.0",
+    "description": "Function plugin for markdown-it markdown parser",
+    "keywords": [
+        "markdown-it-plugin",
+        "markdown-it",
+        "markdown",
+        "function"
+    ],
+    "repository": "sguerri/markdown-it-function",
+    "license": "MIT",
+    "scripts": {
+        "lint": "eslint ./src",
+        "example": "cd example && node .",
+        "browserify": "rollup -c rollup/rollup.config.js"
+    },
+    "files": [
+        "src/",
+        "dist/"
+    ],
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^15.1.0",
+        "@rollup/plugin-json": "^4.1.0",
+        "@rollup/plugin-node-resolve": "^9.0.0",
+        "eslint": "^7.11.0",
+        "markdown-it": "^12.0.0",
+        "rollup": "^2.29.0",
+        "rollup-plugin-terser": "^7.0.2"
+    }
+}
