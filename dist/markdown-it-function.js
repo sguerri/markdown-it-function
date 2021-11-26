@@ -1,5 +1,5 @@
 
-/*! markdown-it-function 0.1.5 https://github.com/sguerri/markdown-it-function @license MIT */
+/*! markdown-it-function 0.1.6 https://github.com/sguerri/markdown-it-function @license MIT */
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
     typeof define === 'function' && define.amd ? define(factory) :
@@ -85,7 +85,7 @@
         }
     };
 
-    var src = function(md, options)
+    var markdownItFunction = function(md, options)
     {
         options = options || {};
         md.block.ruler.before('fence', 'function', replace(), {
@@ -94,6 +94,6 @@
         md.renderer.rules['function'] = render(options);
     };
 
-    return src;
+    return markdownItFunction;
 
 }));
